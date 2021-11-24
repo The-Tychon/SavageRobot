@@ -84,7 +84,7 @@ async def inline_help_func(__HELP__):
             title="Inline Commands",
             description="Help Related To Inline Usage.",
             input_message_content=InputTextMessageContent(__HELP__),
-            thumb_url="https://telegra.ph/file/ad9d8a4adb866d62c501f.png",
+            thumb_url="https://te.legra.ph/file/f95886fb9f39f40c5e534.png",
             reply_markup=buttons,
         )
     ]
@@ -97,25 +97,25 @@ async def alive_function(answers):
     bot_state = "Dead" if not await app.get_me() else "Alive"
     # ubot_state = 'Dead' if not await app2.get_me() else 'Alive'
     buttons.add(
-        InlineKeyboardButton("Main Bot", url="https://t.me/Cutiepii_Robot"),
+        InlineKeyboardButton("Main Bot", url="https://t.me/SavagexRobot"),
         InlineKeyboardButton("Go Inline!", switch_inline_query_current_chat=""),
     )
 
     msg = f"""
-**[Cutiepii 💜](https://github.com/Awesome-RJ/CutiepiiRobot):**
+**[SavageRobot](https://t.me/electro_updates):**
 **MainBot:** `{bot_state}`
 **UserBot:** `Alive`
 **Python:** `3.9`
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/Awesome_Cutiepii)
+**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/Savage_assistant)
 """
     answers.append(
         InlineQueryResultArticle(
             title="Alive",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/0d42f41c08e511b557ecc.png",
+            thumb_url="https://te.legra.ph/file/f95886fb9f39f40c5e534.png",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
