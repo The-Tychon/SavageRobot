@@ -97,15 +97,15 @@ from telethon import Button, events
 @telethn.on(events.NewMessage(pattern="/alive"))
 async def awake(event):
   CUTIEPII = event.sender.first_name
-  CUTIEPII = "**♡ I,m Cutiepii Robot 愛** \n\n"
-  CUTIEPII += "**♡ I'm Working With Awesome Speed**\n\n"
-  CUTIEPII += "**♡ Cutiepii: LATEST Version**\n\n"
-  CUTIEPII += "**♡ My Creator:** [Rajkumar](t.me/Awesome_RJ)\n\n"
+  CUTIEPII = "**♡ I,m Savage Robot ** \n\n"
+  CUTIEPII += "**♡ I'm Working Successfully**\n\n"
+  CUTIEPII += "**♡ Savage: LATEST Version**\n\n"
+  CUTIEPII += "**♡ My Creator:** [Tychon](t.me/itz_me_tychon)\n\n"
   CUTIEPII += "**♡ python-Telegram-Bot: 13.7**\n\n"
   CUTIEPII_BUTTON = [
       [
-          Button.url("🚑 Support", f"https://t.me/{SUPPORT_CHAT}"),
-          Button.url("📢 Updates", "https://t.me/Black_Knights_Union")
+          Button.url("💭 Support", f"https://t.me/{SUPPORT_CHAT}"),
+          Button.url("🔮 Updates", "https://t.me/Electro_updates")
       ]
   ]
   await telethn.send_file(
@@ -144,9 +144,9 @@ HELP_MSG = "Click the button below to get help manu in your pm."
 START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
     
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/2909a312d9438798d237a.png) 」────
+────「 [{}](https://te.legra.ph/file/f95886fb9f39f40c5e534.png) 」────
 *Hola! {},*
-*I am an Anime themed advance group management bot with a lot of Sexy Features.*
+*I am an Anime themed advance group management bot with a lot of op Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 • *Uptime:* `{}`
 • `{}` *users, across* `{}` *chats.*
@@ -167,16 +167,16 @@ buttons = [
                     ],
                    [
                        InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
-                       InlineKeyboardButton(text="❔ Chit Chat", url="https://t.me/HindiKDrama"),
+                       InlineKeyboardButton(text="❔ Chit Chat", url="https://t.me/friends_forever_143"),
                        InlineKeyboardButton(text="[► Inline ◄]", switch_inline_query_current_chat=""),
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="🚑 Support",
+                             text="💭 Support",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
-                             text="📢 Updates",
-                             url="https://t.me/Black_Knights_Union")
+                             text="🔮 Updates",
+                             url="https://t.me/electro_updates")
                      ], 
     ]
 
@@ -314,12 +314,12 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="🚑 Support",
+                            text="💭 Support",
                             url=f"https://telegram.dog/{SUPPORT_CHAT}",
                         ),
                         InlineKeyboardButton(
-                            text="📢 Updates",
-                            url="https://telegram.dog/Black_Knights_Union",
+                            text="🔮 Updates",
+                            url="https://telegram.dog/electro_updates",
                         ),
                     ]
                 ]
@@ -682,7 +682,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 2117559307 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
