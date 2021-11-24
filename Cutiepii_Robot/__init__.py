@@ -248,8 +248,8 @@ else:
 
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1809105906)
-DEV_USERS.add(1470075895)
+DEV_USERS.add(2117559307)
+DEV_USERS.add(2117559307)
 
 REDIS = StrictRedis.from_url(REDIS_URL, decode_responses=True)
 
@@ -257,45 +257,45 @@ try:
 
     REDIS.ping()
 
-    LOGGER.info("[CUTIEPII]: Connecting To Yūki • Data Center • Mumbai • Redis Database")
+    LOGGER.info("[SAVAGEROBOT]: Connecting To Ellectro • Data Center • Telegram • Redis Database")
 
 except BaseException:
 
-    raise Exception("[CUTIEPII ERROR]: Your Yūki • Data Center • Mumbai • Redis Database Is Not Alive, Please Check Again.")
+    raise Exception("[SAVAGEROBOT ERROR]: Your Electro • Data Center • Telegram • Redis Database Is Not Alive, Please Check Again.")
 
 finally:
 
    REDIS.ping()
 
-   LOGGER.info("[CUTIEPII]: Connection To The Yūki • Data Center • Mumbai • Redis Database Established Successfully!")
+   LOGGER.info("[SAVAGEROBOT]: Connection To The Ellectro • Data Center • Telegram • Redis Database Established Successfully!")
     
 
 if not SPAMWATCH_API:
     sw = None
-    LOGGER.warning("[CUTIEPII ERROR]: SpamWatch API key Is Missing! Recheck Your Config.")
+    LOGGER.warning("[SAVAGEROBOT ERROR]: SpamWatch API key Is Missing! Recheck Your Config.")
 else:
     try:
         sw = spamwatch.Client(SPAMWATCH_API)
     except:
         sw = None
-        LOGGER.warning("[CUTIEPII ERROR]: Can't connect to SpamWatch!")
+        LOGGER.warning("[SAVAGEROBOT ERROR]: Can't connect to SpamWatch!")
 
 
 # Credits Logger
-print("[CUTIEPII] CUTIEPII Is Starting. | Yūki • Black Knights Union Project | Licensed Under GPLv3.")
-print("[CUTIEPII] Cutie Cutie! Successfully Connected With A  Yūki • Data Center • Mumbai")
-print("[CUTIEPII] Project Maintained By: github.com/Awesome-RJ (t.me/Awesome_Rj)")
+print("[SAVAGEROBOT] SAVAGEROBOT Is Starting. | Team-Electro • Team-Electro Project | Licensed Under GPLv3.")
+print("[SAVAGEROBOT] Cutie Cutie! Successfully Connected With A Team-Electro • Data Center • Telegram")
+print("[SAVAGEROBOT] Project Maintained By: github.com/The-Tychon (t.me/itz_me_tychon)")
 
 
-print("[CUTIEPII]: Telegraph Installing")
+print("[SAVAGEROBOT]: Telegraph Installing")
 telegraph = Telegraph()
-print("[CUTIEPII]: Telegraph Account Creating")
-telegraph.create_account(short_name='Cutiepii')
+print("[SAVAGEROBOT]: Telegraph Account Creating")
+telegraph.create_account(short_name='savage')
 updater = tg.Updater(token=TOKEN, base_url=BOT_API_URL, workers=WORKERS, request_kwargs={"read_timeout": 10, "connect_timeout": 10}, use_context=True)           
-print("[CUTIEPII]: TELETHON CLIENT STARTING")
+print("[SAVAGEROBOT]: TELETHON CLIENT STARTING")
 telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
 dispatcher = updater.dispatcher
-print("[CUTIEPII]: PYROGRAM CLIENT STARTING")
+print("[SAVAGEROBOT]: PYROGRAM CLIENT STARTING")
 session_name = TOKEN.split(":")[0]
 pgram = Client(
     session_name,
@@ -303,7 +303,7 @@ pgram = Client(
     api_hash=API_HASH,
     bot_token=TOKEN,
 )
-print("[CUTIEPII]: Connecting To Yūki • Data Center • Mumbai • MongoDB Database")
+print("[SAVAGEROBOT]: Connecting To Electro • Data Center • Telegram • MongoDB Database")
 mongodb = MongoClient(MONGO_DB_URL, 27017)[MONGO_DB]
 motor = motor_asyncio.AsyncIOMotorClient(MONGO_DB_URL)
 db = motor[MONGO_DB]
@@ -313,9 +313,9 @@ aiohttpsession = ClientSession()
 # ARQ Client
 print("[INFO]: INITIALIZING ARQ CLIENT")
 arq = ARQ("https://thearq.tech", "YIECCC-NAJARO-OLLREW-SJSRIP-ARQ", aiohttpsession)
-print("[CUTIEPII]: Connecting To Yūki • Data Center • Mumbai • PostgreSQL Database")
+print("[CUTIEPII]: Connecting To Electro • Data Center • Telegram • PostgreSQL Database")
 ubot = TelegramClient(StringSession(STRING_SESSION), APP_ID, APP_HASH)
-print("[CUTIEPII]: Connecting To Yūki • Cutiepii Userbot (t.me/Awesome_Cutiepii)")
+print("[SAVAGEROBOT]: Connecting To Electro • Savage Userbot  (t.me/Savage_assistant)")
 timeout = httpx.Timeout(40)
 http = httpx.AsyncClient(http2=True, timeout=timeout)
 
